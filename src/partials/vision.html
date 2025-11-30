@@ -1,0 +1,51 @@
+<section class="vision">
+  <div class="container">
+    <div class="vision__wrapper">
+      <h2 class="vision__title">Bring Your Vision to Life</h2>
+      <p class="vision__text">
+        You're in the right place. Share your thoughts with us, and we'll
+        collaborate to make your concept a reality.
+      </p>
+      <form class="about__form">
+        <label for="name">Name*</label>
+        <input type="text" id="name" placeholder="Your name" required />
+        <label for="post">Email*</label>
+        <input type="email" id="post" placeholder="Your email" required />
+        <label for="describe">Describe Your Vision</label>
+        <textarea
+          name="comment"
+          id="describe"
+          placeholder="Tell us about the concept you're imagining. What's the story? What feeling should it evoke? The more details, the better we can understand your unique style."
+          required
+        ></textarea>
+      </form>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ../img/vision/desktop/vision@desktop-1x.webp 1x,
+          ../img/vision/desktop/vision@desktop-2x.webp 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ../img/vision/tablet/vision@tablet-1x.webp 1x,
+          ../img/vision/tablet/vision@tablet-2x.webp 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ../img/vision/mobile/vision@mobile-1x.webp 1x,
+          ../img/vision/mobile/vision@mobile-2x.webp 2x
+        "
+        media="(min-width: 767px)"
+      />
+      <img
+        src="../img/vision/mobile/vision@mobile-1x.webp"
+        alt="picture of clothing"
+      />
+    </picture>
+  </div>
+</section>

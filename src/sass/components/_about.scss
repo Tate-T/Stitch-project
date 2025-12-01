@@ -1,0 +1,68 @@
+.about {
+  display: flex;
+  margin-top: 224px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    gap: 24px;
+  }
+  &__title {
+    @include text(
+      $color: $text-color,
+      $size: 48px,
+      $height: 120%,
+      $weight: 700
+    );
+  }
+  &__text {
+    @include text(
+      $color: $text-color,
+      $size: 18px,
+      $height: 150%,
+      $weight: 400
+    );
+  }
+  &__wrapper {
+    margin-left: 80px;
+  }
+  &__list,
+  &__sec {
+    display: flex;
+  }
+  &__list--item,
+  &__sec--item {
+    width: 402px;
+  }
+  &__list--item--icon,
+  &__sec--item--icon {
+    width: 48px;
+    height: 48px;
+  }
+  &__list--item--subtitle,
+  &__sec--item--subtitle {
+    @include text(
+      $color: $text-color,
+      $size: 32px,
+      $height: 130%,
+      $weight: 700
+    );
+  }
+  &__list--item--text,
+  &__sec--item--text {
+    @include text(
+      $color: $text-color,
+      $size: 16px,
+      $height: 150%,
+      $weight: 400
+    );
+    flex-basis: calc((60% - 48px) / 2);
+  }
+  &__box {
+    display: flex;
+  }
+  &__sec {
+    padding-top: 64px;
+  }
+
+}

@@ -7,10 +7,15 @@
   }
   &__headering {
     font-style: normal;
-    @include text($color: $text-color, $size: 56px, $height: 120%,  $weight: 700);
+    @include text(
+      $color: $text-color,
+      $size: 56px,
+      $height: 120%,
+      $weight: 700
+    );
   }
   &__text {
-    @include text($color: $text-color, $size: 18px,  $weight: 400);
+    @include text($color: $text-color, $size: 18px, $weight: 400);
     font-style: normal;
     width: 616px;
     padding-bottom: 32px;
@@ -23,7 +28,7 @@
     border-radius: 0;
     border: 1px solid black;
     background: black;
-    @include text($color: #fff, $size: 16px,  $weight: 400);
+    @include text($color: #fff, $size: 16px, $weight: 400);
     font-style: normal;
   }
 }

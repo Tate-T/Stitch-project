@@ -1,0 +1,40 @@
+.hero {
+  display: flex;
+  margin-top: 117px;
+  &__container {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__headering {
+    color: var(--text-color);
+    font-family: Roboto;
+    font-size: var(--Text-Sizes-Heading-1, 56px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  &__text {
+    color: var(--Color-Scheme-1-Text, #000);
+    font-family: Roboto;
+    font-size: var(--Text-Sizes-Text-Medium, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  &__wrapper {
+    margin-left: 80px;
+  }
+  &__button {
+    margin-top: 53px;
+    padding: 12px 24px;
+    border-radius: 0;
+    border: 1px solid black;
+    background: black;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}

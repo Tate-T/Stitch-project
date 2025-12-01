@@ -6,35 +6,29 @@
     margin-bottom: 40px;
   }
   &__headering {
-    color: var(--text-color);
-    font-family: Roboto;
-    font-size: var(--Text-Sizes-Heading-1, 56px);
     font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
+    @include text(
+      $color: $text-color,
+      $size: 56px,
+      $height: 120%,
+      $weight: 700
+    );
   }
   &__text {
-    color: var(--Color-Scheme-1-Text, #000);
-    font-family: Roboto;
-    font-size: var(--Text-Sizes-Text-Medium, 18px);
+    @include text($color: $text-color, $size: 18px, $weight: 400);
     font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+    width: 616px;
+    padding-bottom: 32px;
   }
   &__wrapper {
-    margin-left: 80px;
+    padding-left: 134px;
   }
   &__button {
-    margin-top: 53px;
     padding: 12px 24px;
     border-radius: 0;
     border: 1px solid black;
     background: black;
-    color: #fff;
-    font-family: Roboto;
-    font-size: 16px;
+    @include text($color: #fff, $size: 16px, $weight: 400);
     font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
   }
 }

@@ -1,8 +1,11 @@
 .hero {
   display: flex;
   margin-top: 117px;
+  margin-bottom: 112px;
   &__container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 40px;
   }
   &__headering {
@@ -18,10 +21,11 @@
     @include text($color: $text-color, $size: 18px, $weight: 400);
     font-style: normal;
     width: 616px;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
   &__wrapper {
     padding-left: 134px;
+    
   }
   &__button {
     padding: 12px 24px;

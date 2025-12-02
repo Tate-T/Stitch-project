@@ -1,7 +1,7 @@
 .hero {
   display: flex;
-  margin-top: 117px;
-  margin-bottom: 112px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   &__container {
     display: flex;
     flex-direction: row;
@@ -20,12 +20,11 @@
   &__text {
     @include text($color: $text-color, $size: 18px, $weight: 400);
     font-style: normal;
-    width: 616px;
     margin-bottom: 32px;
   }
   &__wrapper {
     padding-left: 134px;
-    
+    width: 616px;
   }
   &__button {
     padding: 12px 24px;

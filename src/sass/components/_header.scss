@@ -164,7 +164,10 @@ align-items: center;
 .header__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+ 
+}
+.header__nav {
+  margin-left: auto;
 }
   .header__list {
      display: flex;
@@ -175,5 +178,8 @@ align-items: center;
   text-align: none;
   margin-right: 0
   
+}
+.header__button {
+  display: none;
 }
   }

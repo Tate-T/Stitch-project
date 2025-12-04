@@ -1,10 +1,13 @@
 .creations {
-    padding-top: 112px;
-    padding-bottom: 112px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   display: flex;
   &__wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 40px;
   }
   &__headering {
     @include text(
@@ -15,7 +18,6 @@
     );
     color: var($text-color);
     text-align: center;
-    margin-bottom: 24px;
   }
   &__text {
     @include text(
@@ -24,20 +26,18 @@
       $height: 150%,
       $weight: 400
     );
-    text-align: center;
     width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+    align-self: center;
   }
   &__list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    gap: 12px;
   }
   &__item {
-    flex-basis: calc(100% / 2);
-    padding-right: 12px;
     padding-top: 12px;
+  }
+  &__img {
+    width: 634px;
   }
 }

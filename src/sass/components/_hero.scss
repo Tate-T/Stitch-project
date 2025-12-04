@@ -16,6 +16,7 @@
       $height: 120%,
       $weight: 700
     );
+    width: 562px;
   }
   &__text {
     @include text($color: $text-color, $size: 18px, $weight: 400);

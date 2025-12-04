@@ -33,9 +33,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    align-items: center;
+    justify-content: center;
   }
   &__item {
-    padding-top: 12px;
   }
   &__img {
     width: 634px;

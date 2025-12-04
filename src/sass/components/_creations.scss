@@ -1,0 +1,43 @@
+.creations {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  display: flex;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__headering {
+    @include text(
+      $color: $text-color,
+      $size: 48px,
+      $height: 120%,
+      $weight: 700
+    );
+    color: var($text-color);
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__text {
+    @include text(
+      $color: $text-color,
+      $size: 18px,
+      $height: 150%,
+      $weight: 400
+    );
+    text-align: center;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex-basis: calc(100% / 2);
+    padding-right: 12px;
+    padding-top: 12px;
+  }
+}

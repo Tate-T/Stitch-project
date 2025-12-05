@@ -10,11 +10,9 @@
     margin-bottom: 40px;
   }
   &__headering {
-    @include text(
-      $color: $text-color,
+    @include title(
       $size: 48px,
-      $height: 120%,
-      $weight: 700
+      $height: 120%
     );
     color: var($text-color);
     text-align: center;
@@ -22,9 +20,7 @@
   &__text {
     @include text(
       $color: $text-color,
-      $size: 18px,
-      $height: 150%,
-      $weight: 400
+      $size: 18px
     );
     width: 768px;
     align-self: center;

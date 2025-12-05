@@ -54,25 +54,14 @@ padding-top: 112px;
         gap: 80px;
 }
 &__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-position($direction: column);
 }
 &__title {
-    font-family: "Roboto", sans-serif;
-font-weight: 700;
-font-size: 48px;
-line-height: 120%;
-color: #000;
+     @include title($size: 48px, $height: 120%);
 margin-bottom: 24px;
 }
 &__info {
-    font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 18px;
-line-height: 150%;
-color: #000;
+     @include text($size: 18px);
 }
 &__list {
     display: flex;
@@ -83,19 +72,11 @@ color: #000;
     width: 296px;
 }
 &__subtitle {
-    font-family: "Roboto", sans-serif;
-font-weight: 700;
-font-size: 20px;
-line-height: 140%;
-color: #000;
+    @include title($size: 20px, $height: 140%);
 margin-bottom: 16px;
 }
 &__text {
-    font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-color: #000;
+     @include text($size: 16px);
 }
 &___img {
     width: 616px;

@@ -10,12 +10,7 @@
   }
   &__title {
     font-style: normal;
-    @include text(
-      $color: $text-color,
-      $size: 56px,
-      $height: 120%,
-      $weight: 700
-    );
+    @include title( $size: 56px, $height: 120%);
     width: 562px;
   }
   &__text {

@@ -1,17 +1,12 @@
-
 header {
   margin: 0 auto;
   padding: 16px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+   @include flex-position($horizontally: space-between);
 }
 
 .header__list {
+   @include flex-position($horizontally: space-between);
   list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 input[type="checkbox"],
@@ -24,45 +19,39 @@ label {
   flex-grow: 1;
   text-align: right;
   margin-right: 16px;
-  
 }
 
 .started {
- font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-color: #fff;
-margin-left: 32px;
-background: #000;
-padding: 8px 20px 8px 20px;
+  @include text($color: #fff, $size: 16px);
+  margin-left: 32px;
+  background: #000;
+  padding: 8px 20px 8px 20px;
 }
 
 .started:hover {
-  opacity: .7;
+  opacity: 0.7;
   cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-   .header__button {
-      font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-color: #fff;
-margin-left: 32px;
-background: #000;
-padding: 8px 20px 8px 20px;
+  .header__button {
+    @include text($color: #fff, $size: 16px);
 
-} 
-.join_block {
- display: none;
-  
+    margin-left: 32px;
+    background: #000;
+    padding: 8px 20px 8px 20px;
+  }
+  .join_block {
+    display: none;
+  }
 }
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
 }
 /* mobile menu */
 @media (max-width: 1343px) {
-
   nav {
     order: 1;
   }
@@ -82,14 +71,14 @@ padding: 8px 20px 8px 20px;
   label span,
   label span::before,
   label span::after {
-    content: '';
+    content: "";
     display: block;
     width: 25px;
     height: 2px;
     background: #333;
     position: absolute;
     right: 0;
-    transition: .3s;
+    transition: 0.3s;
   }
   label span::before {
     top: -8px;
@@ -100,7 +89,7 @@ padding: 8px 20px 8px 20px;
   .header__list {
     display: none;
   }
-  input[type="checkbox"]:checked ~ .header__list{
+  input[type="checkbox"]:checked ~ .header__list {
     display: flex;
     flex-direction: column;
   }
@@ -129,57 +118,43 @@ padding: 8px 20px 8px 20px;
   }
 }
 .header__icon {
-     width: 36px;
-        height: 33px;
-  }
-  .header__link__logo {
-     display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 4px;
-        font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 31px;
-line-height: 140%;
-color: #000;
-  }
-  .header__link{
-     font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-color: #000;
-  }
-  .header__container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-  }
-
+  width: 36px;
+  height: 33px;
+}
+.header__link__logo {
+   @include flex-position($gap: 4px);
+  @include logo($size: 31px);
+  color: #000;
+}
+.header__link {
+  @include text($color: #000, $size: 16px);
+}
+.header__container {
+  @include flex-position($horizontally: space-between);
+}
 
 @media screen and (min-width: 1344px) {
- .header {
+  .header {
     padding-bottom: 16px;
-    padding-top: 16px;}
-.header__container {
+    padding-top: 16px;
+  }
+  .header__container {
     display: flex;
     align-items: center;
- 
-}
-.header__nav {
-  margin-left: auto;
-}
+  }
+  .header__nav {
+    margin-left: auto;
+  }
   .header__list {
-     display: flex;
-        gap: 32px;
+    display: flex;
+    gap: 32px;
   }
   .join_block {
-  flex-grow: 0;
-  text-align: none;
-  margin-right: 0
-  
-}
-.header__button {
-  display: none;
-}
+    flex-grow: 0;
+    text-align: none;
+    margin-right: 0;
   }
+  .header__button {
+    display: none;
+  }
+}

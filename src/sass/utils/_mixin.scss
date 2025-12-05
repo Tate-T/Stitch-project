@@ -12,15 +12,15 @@
         line-height: $height;
         font-weight: $weight;
 }
-@mixin text($color: $text-color, $size: 0, $height: normal,  $weight: 400) {
+@mixin text($color: $text-color, $size: 0, $weight: 400) {
     color: $color;
-        font-family: "Roboto";
+        font-family: "Roboto", sans-serif;
         font-size: $size;
         line-height: 150%;
         font-weight: $weight;
 }
 @mixin logo($size: 0 ) {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
         font-size: $size;
         font-weight: 500;
     line-height: 140%;

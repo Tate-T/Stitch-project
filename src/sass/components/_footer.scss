@@ -90,7 +90,6 @@
     }
     &__link {
         @include text(
-            $weight: 400px,
             $size: 16px
         );
     }
@@ -109,7 +108,6 @@
     }
     &__info {
          @include text(
-            $weight: 400px,
             $size: 14px
         );
         height: 53px;

@@ -14,18 +14,15 @@
     flex-shrink: 0;
   }
   &__title {
-    @include text(
-      $color: $text-color,
+    @include title(
       $size: 48px,
       $height: 120%,
-      $weight: 700
     );
   }
   &__text {
     @include text(
       $color: $text-color,
       $size: 18px,
-      $height: 150%,
       $weight: 400
     );
   }
@@ -47,18 +44,15 @@
   }
   &__list--item--subtitle {
     margin-bottom: 12px;
-    @include text(
-      $color: $text-color,
+    @include title(
       $size: 32px,
-      $height: 130%,
-      $weight: 700
+      $height: 130%
     );
   }
   &__list--item--text {
     @include text(
       $color: $text-color,
       $size: 16px,
-      $height: 150%,
       $weight: 400
     );
   }

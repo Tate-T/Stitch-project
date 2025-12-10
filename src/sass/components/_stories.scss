@@ -4,11 +4,9 @@
   display: flex;
   &__title {
     text-align: center;
-    @include text(
-      $color: $text-color,
+    @include title(
       $size: 48px,
       $height: 120%,
-      $weight: 700
     );
     margin-bottom: 40px;
   }
@@ -32,17 +30,12 @@
   }
   &__text {
     @include text(
-      $color: $text-color,
-      $size: 18px,
-      $height: 150%,
-      $weight: 400
+      $size: 18px
     );
   }
   &__user {
     @include text(
-      $color: $text-color,
       $size: 16px,
-      $height: 150%,
       $weight: 600
     );
   }

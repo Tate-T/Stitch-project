@@ -1,0 +1,26 @@
+@keyframes drift {
+ from {
+  transform: rotate(0deg);
+ }
+ from {
+  transform: rotate(360deg);
+ }
+}
+
+@keyframes rumbleinthejungle {
+ 0% {
+  transform: translatex(0);
+ }
+ 25% {
+  transform: translatex(-5px);
+ }
+ 50% {
+  transform: translatex(0);
+ }
+ 75% {
+  transform: translatex(5px);
+ }
+ 100% {
+  transform: translatex(0);
+ }
+}

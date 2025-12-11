@@ -4,7 +4,7 @@
   display: flex;
   &__title {
     text-align: center;
-    @include text(
+    @include title(
       $color: $text-color,
       $size: 48px,
       $height: 120%,
@@ -34,7 +34,6 @@
     @include text(
       $color: $text-color,
       $size: 18px,
-      $height: 150%,
       $weight: 400
     );
   }
@@ -42,7 +41,6 @@
     @include text(
       $color: $text-color,
       $size: 16px,
-      $height: 150%,
       $weight: 600
     );
   }

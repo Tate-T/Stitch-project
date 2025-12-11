@@ -5,10 +5,8 @@
   &__title {
     text-align: center;
     @include title(
-      $color: $text-color,
       $size: 48px,
       $height: 120%,
-      $weight: 700
     );
     margin-bottom: 40px;
   }
@@ -32,14 +30,11 @@
   }
   &__text {
     @include text(
-      $color: $text-color,
-      $size: 18px,
-      $weight: 400
+      $size: 18px
     );
   }
   &__user {
     @include text(
-      $color: $text-color,
       $size: 16px,
       $weight: 600
     );

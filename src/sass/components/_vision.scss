@@ -16,11 +16,11 @@
       $height: 120%,
       $weight: 700
     );
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
   &__text {
     @include text($color: $text-color, $size: 18px, $weight: 400);
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
   &__wrapper {
     display: flex;

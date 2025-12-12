@@ -1,15 +1,73 @@
 .materials {
+  padding-top: 64px;
+  padding-bottom: 64px;
   &__container {
   }
   &__title {
+    @include title($size: 36px, $height: 120%);
+      text-align: center;
+      margin-bottom: 40px;
   }
   &__list {
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
   }
   &__item {
+    max-width: 335px;
+height: 314px;
+min-width: 225px;
+ display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding: 12px;
+      gap: 12px;
   }
+  &__item:nth-child(1) {
+      background: url("../../img/materials/mobile/denim@mobile-1x.webp");
+       @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url("../../img/materials/mobile/denim@mobile-2x.webp");
+    }
+    }
+    &__item:nth-child(2) {
+      background: url("../../img/materials/mobile/ripstop@mobile-1x.webp");
+       @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url("../../img/materials/mobile/ripstop@mobile-2x.webp");
+    }
+    }
+    &__item:nth-child(3) {
+      background: url("../../img/materials/mobile/leather@mobile-1x.webp");
+       @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url("../../img/materials/mobile/leather@mobile-2x.webp");
+    }
+    }
+    &__item:nth-child(4) {
+      background: url("../../img/materials/mobile/fleece@mobile-1x.webp");
+        @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url("../../img/materials/mobile/fleece@mobile-2x.webp");
+    }
+    }
+    &__item:nth-child(5) {
+      background: url("../../img/materials/mobile/canvas@mobile-1x.webp");
+       @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url("../../img/materials/mobile/canvas@mobile-2x.webp");
+    }
+    }
   &__subtitle {
+    @include title($color: #fff, $size: 18px, $height: 140%);
   }
   &__text {
+     @include text($color: #fff, $size: 16px);
   }
 }
 
@@ -20,8 +78,62 @@
     &__title {
     }
     &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
     }
     &__item {
+    }
+    &__item:nth-child(1) {
+       max-width: 226px;
+height: 595px;
+      background: url("../../img/materials/tablet/denim@tablet-1x.webp");
+       @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url("../../img/materials/tablet/denim@tablet-2x.webp");
+    }
+    }
+    &__item:nth-child(2) {
+       max-width: 226px;
+height: 595px;
+      background: url("../../img/materials/tablet/ripstop@tablet-1x.webp");
+       @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url("../../img/materials/tablet/ripstop@tablet-2x.webp");
+    }
+    }
+    &__item:nth-child(3) {
+       max-width: 226px;
+height: 595px;
+      background: url("../../img/materials/tablet/leather@tablet-1x.webp");
+       @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url("../../img/materials/tablet/leather@tablet-2x.webp");
+    }
+    }
+    &__item:nth-child(4) {
+      width: 346px;
+height: 595px;
+      background: url("../../img/materials/tablet/fleece@tablet-1x.webp");
+        @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url("../../img/materials/tablet/fleece@tablet-2x.webp");
+    }
+    }
+    &__item:nth-child(5) {
+      width: 346px;
+height: 595px;
+      background: url("../../img/materials/tablet/canvas@tablet-1x.webp");
+       @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url("../../img/materials/tablet/canvas@tablet-2x.webp");
+    }
     }
     &__subtitle {
     }
@@ -38,25 +150,15 @@
     &__container {
     }
     &__title {
-      @include title($size: 48px, $height: 120%);
-
-      text-align: center;
-
-      margin-bottom: 40px;
+      @include title($size: 48px);
     }
     &__list {
-      display: flex;
-      gap: 11.8px;
     }
     &__item {
-      height: 873px;
-      width: 252px;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      padding: 12px;
     }
     &__item:nth-child(1) {
+      height: 873px;
+      max-width: 252px;
       background: url("../img/materials/desktop/denim@desktop-1x.webp");
        @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -65,6 +167,8 @@
     }
     }
     &__item:nth-child(2) {
+      height: 873px;
+      max-width: 252px;
       background: url("../img/materials/desktop/ripstop@desktop-1x.webp");
        @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -73,6 +177,8 @@
     }
     }
     &__item:nth-child(3) {
+      height: 873px;
+      max-width: 252px;
       background: url("../img/materials/desktop/leather@desktop-1x.webp");
        @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -81,6 +187,8 @@
     }
     }
     &__item:nth-child(4) {
+      height: 873px;
+      max-width: 252px;
       background: url("../img/materials/desktop/fleece@desktop-1x.webp");
         @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -89,6 +197,8 @@
     }
     }
     &__item:nth-child(5) {
+      height: 873px;
+      max-width: 252px;
       background: url("../img/materials/desktop/canvas@desktop-1x.webp");
        @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -97,10 +207,10 @@
     }
     }
     &__subtitle {
-      @include title($color: #fff, $size: 20px, $height: 140%);
-      margin-bottom: 12px;
+      @include title($color: #fff, $size: 20px);
     }
     &__text {
+  
       @include text($color: #fff, $size: 18px);
     }
   }

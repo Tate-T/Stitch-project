@@ -1,27 +1,63 @@
 .footer {
+  padding-bottom: 48px;
+  padding-top: 48px;
   &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
   }
   &__box {
+    
   }
   &__link__logo {
+     @include logo(
+            $size: 37px,
+        );
+        display: flex;
+        gap: 4px;
+        align-items: center;
   }
-  &__icon {
-  }
+  &__logo__icon {
+        width: 42px;
+        height: 38px;
+    }
   &__nav {
+  
+   text-align: center;
   }
   &__list {
+display: flex;
+flex-direction: column;
+        gap: 32px;
   }
   &__item {
   }
   &__link {
+      @include text(
+            $size: 16px
+        );
   }
   &__wrapper {
+    margin-bottom: 40px;
   }
   &__iocns {
+    display: flex;
+gap: 24px;
   }
   &__app {
+     width: 32px;
+        height: 32px;
   }
   &__info {
+      @include text(
+            $size: 14px
+        );
+ height: 53px;
+border-top: 1px solid $text-color;
+display: flex;
+align-items: flex-end;
+justify-content: center;
   }
 }
 
@@ -38,14 +74,17 @@
     &__nav {
     }
     &__list {
+      flex-direction: row;
     }
     &__item {
     }
     &__link {
     }
     &__wrapper {
+      margin-bottom: 80px;
     }
     &__iocns {
+      gap: 12px;
     }
     &__app {
     }
@@ -59,13 +98,12 @@
     padding-top: 80px;
     padding-bottom: 80px;
     &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
+      flex-direction: row;
+        justify-content: space-between;   
+        gap: 0;
     }
     &__box {
-        
+       
        
     }
     &__link__logo {
@@ -81,23 +119,20 @@
         height: 21px;
     }
     &__nav {
+      
     }
     &__list {
-        display: flex;
-        gap: 32px;
     }
     &__item {
     }
     &__link {
-        @include text(
-            $size: 16px
-        );
+      
     }
     &__wrapper {
+      margin-bottom: 0;
     }
     &__iocns {
-        display: flex;
-        gap: 12px;
+
     }
     &__icon {
 
@@ -107,16 +142,11 @@
         height: 24px;
     }
     &__info {
-         @include text(
-            $size: 14px
-        );
-        height: 53px;
+       
+       
       
         margin-top: 80px;
-border-top: 1px solid $text-color;
-display: flex;
-align-items: flex-end;
-justify-content: center;
+
 
     }
   }

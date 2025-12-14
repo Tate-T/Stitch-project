@@ -22,6 +22,30 @@ min-width: 225px;
       justify-content: end;
       padding: 12px;
       gap: 12px;
+
+  }
+  &__list .materials__item {
+transition-property: transform;
+transition-duration: 1s;
+
+   }
+   &__list .materials__item:hover {
+transform: scale(1, 1);
+transition-property: transform;
+transition-duration: 1s;
+
+   }
+     &__list > .materials__item:not(:hover) {
+   transition-property: filter, transform;
+transition-duration: 1s;
+
+  }
+  &__list:hover > .materials__item:not(:hover) {
+    filter: blur(10px);
+   transform: scale(0.9, 0.9);
+   transition-property: filter, transform;
+transition-duration: 1s;
+
   }
   &__item:nth-child(1) {
       background: url("../img/materials/mobile/denim@mobile-1x.webp");

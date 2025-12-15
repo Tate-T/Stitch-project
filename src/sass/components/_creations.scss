@@ -10,20 +10,20 @@
     margin-bottom: 40px;
   }
   &__headering {
-    @include title(
-      $size: 48px,
-      $height: 120%
-    );
-    color: var($text-color);
+    @include title($size: 36px, $height: 120%);
     text-align: center;
+    @media screen and (min-width: 1280px) {
+      font-size: 48px;
+    }
   }
   &__text {
-    @include text(
-      $color: $text-color,
-      $size: 18px
-    );
-    width: 768px;
-    align-self: center;
+    @include text($color: $text-color, $size: 16px);
+    width: 100%;
+    text-align: center;
+    @media screen and (min-width: 1280px) {
+      max-width: 768px;
+      @include text($color: $text-color, $size: 18px);
+    }
   }
   &__list {
     display: flex;
@@ -33,6 +33,6 @@
     justify-content: center;
   }
   &__img {
-    width: 634px;
+    width: 100%;
   }
 }

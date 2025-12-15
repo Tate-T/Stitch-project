@@ -74,6 +74,9 @@ a.butn {
   transition: 0.3s all ease-in-out;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
     0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+      transition-property: background, color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
 }
 
 a.butn .wave {
@@ -91,10 +94,14 @@ a.butn .wave {
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
     0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
   animation: drift 8000ms infinite linear;
+   transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
 }
 
 .butn:hover > .wave {
   background: #fff;
+  
 }
 a.butn.rumble {
   animation: rumbleinthejungle 300ms linear;
@@ -108,7 +115,7 @@ a.butn .text {
 a.butn:hover {
   color: #000;
   background: #b1afaf;
-  border: #000 1px solid;
   box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.1),
     0 6px 10px 5px rgba(0, 0, 0, 0.12), 0 8px 5px -5px rgba(0, 0, 0, 0.3);
+  
 }

@@ -1,59 +1,113 @@
 .about {
-  padding-top: 112px;
-  padding-bottom: 112px;
-  .about__box {
-    display: flex;
-    justify-content: space-between;
-    gap: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 96px 0;
   }
-  &__container {
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    padding: 112px 0;
+  }
+
+  &__box {
     display: flex;
     flex-direction: column;
-    width: 380px;
+    gap: 48px;
+
+    @media screen and (min-width: 1280px) {
+      flex-direction: row;
+      gap: 80px;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
-    flex-shrink: 0;
+    margin-bottom: 80px;
+
+    @media screen and (min-width: 1280px) {
+      flex-shrink: 0;
+    }
   }
+
   &__title {
-    @include title(
-      $size: 48px,
-      $height: 120%,
-    );
+    @include title($size: 32px, $height: 120%);
+
+    @media screen and (min-width: 768px) {
+      @include title($size: 40px, $height: 120%);
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include title($size: 48px, $height: 120%);
+    }
   }
+
   &__text {
-    @include text(
-      $color: $text-color,
-      $size: 18px,
-      $weight: 400
-    );
+    @include text($color: $text-color, $size: 16px, $weight: 400);
+    
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
   }
+
   &__wrapper {
-    flex: 1;
+    width: 100%;
   }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 48px 56px;
+    gap: 24px 16px;
+
+    @media screen and (min-width: 768px) {
+      gap: 40px 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      gap: 48px 56px;
+    }
   }
+
   &__list--item {
     width: 100%;
   }
+
   &__list--item--icon {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      width: 48px;
+      height: 48px;
+    }
   }
+
   &__list--item--subtitle {
     margin-bottom: 12px;
-    @include title(
-      $size: 32px,
-      $height: 130%
-    );
+    @include title($size: 24px, $height: 130%);
+
+    @media screen and (min-width: 768px) {
+      @include title($size: 28px, $height: 130%);
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include title($size: 32px, $height: 130%);
+    }
   }
+
   &__list--item--text {
-    @include text(
-      $color: $text-color,
-      $size: 16px,
-      $weight: 400
-    );
+    @include text($color: $text-color, $size: 15px, $weight: 400);
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
   }
 }

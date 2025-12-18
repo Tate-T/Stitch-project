@@ -1,6 +1,8 @@
 .creations {
-  padding-top: 112px;
-  padding-bottom: 112px;
+  padding: 64px 0;
+  @media screen and (min-width: 1280px) {
+    padding: 112px 0;
+  }
   display: flex;
   &__wrapper {
     display: flex;

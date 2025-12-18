@@ -1,14 +1,16 @@
 .stories {
-  padding-top: 112px;
-  padding-bottom: 112px;
+  padding: 64px 0;
+  @media screen and (min-width: 1280px) {
+    padding: 112px 0;
+  }
   display: flex;
   &__title {
     text-align: center;
-    @include title(
-      $size: 48px,
-      $height: 120%,
-    );
+    @include title($size: 36px, $height: 120%);
     margin-bottom: 40px;
+    @media screen and (min-width: 1280px) {
+      font-size: 48px;
+    }
   }
   &__list {
     gap: 32px;
@@ -23,20 +25,20 @@
     gap: 24px;
     align-self: stretch;
     padding-bottom: 32px;
-    flex-basis: calc((100% - 32px) / 2);
     border-radius: 0;
     border: 1px solid #000;
     background: #fff;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 32px) / 2);
+    }
   }
   &__text {
-    @include text(
-      $size: 18px
-    );
+    @include text($size: 16px);
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+    }
   }
   &__user {
-    @include text(
-      $size: 16px,
-      $weight: 600
-    );
+    @include text($size: 16px, $weight: 600);
   }
 }

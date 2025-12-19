@@ -45,7 +45,9 @@
   &__form {
     display: flex;
     flex-direction: column;
+    width: 100%;
     @media screen and (min-width: 1280px) {
+      max-width: 616px;
     }
   }
   &__form--text {
@@ -64,10 +66,6 @@
     padding: 12px;
     align-items: center;
     margin-bottom: 24px;
-    width: 100%;
-    @media screen and (min-width: 1280px) {
-      max-width: 616px;
-    }
   }
   &__comment {
     resize: none;
@@ -77,10 +75,6 @@
     align-items: flex-start;
     align-self: stretch;
     margin-bottom: 24px;
-    width: 100%;
-    @media screen and (min-width: 1280px) {
-      max-width: 616px;
-    }
   }
 }
 

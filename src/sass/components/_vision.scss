@@ -63,8 +63,11 @@
     border: 1px solid #000;
     padding: 12px;
     align-items: center;
-    max-width: 616px;
     margin-bottom: 24px;
+    width: 100%;
+    @media screen and (min-width: 1280px) {
+      max-width: 616px;
+    }
   }
   &__comment {
     resize: none;
@@ -73,8 +76,11 @@
     padding: 12px;
     align-items: flex-start;
     align-self: stretch;
-    max-width: 616px;
     margin-bottom: 24px;
+    width: 100%;
+    @media screen and (min-width: 1280px) {
+      max-width: 616px;
+    }
   }
 }
 

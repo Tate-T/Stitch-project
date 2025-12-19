@@ -10,11 +10,15 @@ header {
   z-index: 10;
 }
 
+
 input[type="checkbox"]
  {
   display: none;
 }
-
+ .header__nav {
+  border: #000 solid 1px;
+  padding: 5px 8px 6px 5px;
+ }
 
 /* join_block */
 .middle {
@@ -94,7 +98,7 @@ a.btn:hover {
   .header__button {
     @include text($color: #fff, $size: 16px);
 
-    margin-left: 32px;
+    
     background: #000;
     padding: 8px 20px 8px 20px;
   }
@@ -205,6 +209,8 @@ a.btn:hover {
   }
   .header__nav {
     margin-left: auto;
+    padding: 0;
+    border: none;
   }
   .header__list {
     display: flex;
@@ -212,6 +218,7 @@ a.btn:hover {
   }
   .header__link {
     position: relative;
+
   }
 
 .header__link::before,

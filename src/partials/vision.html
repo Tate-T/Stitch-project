@@ -7,7 +7,9 @@
         collaborate to make your concept a reality.
       </p>
       <form class="vision__form">
-        <label class="vision__form--text" for="name">Name*</label>
+        <div class="vision__form--text--wrapper">
+          <label class="vision__form--text" for="name">Name*</label>
+        </div>
         <input
           class="vision__user--data"
           type="text"
@@ -15,7 +17,9 @@
           placeholder="Your name"
           required
         />
-        <label class="vision__form--text" for="post">Email*</label>
+        <div class="vision__form--text--wrapper">
+          <label class="vision__form--text" for="post">Email*</label>
+        </div>
         <input
           class="vision__user--data"
           type="email"
@@ -23,7 +27,11 @@
           placeholder="Your email"
           required
         />
-        <label class="vision__form--text" for="describe">Describe Your Vision</label>
+        <div class="vision__form--text--wrapper">
+          <label class="vision__form--text" for="describe"
+            >Describe Your Vision</label
+          >
+        </div>
         <textarea
           class="vision__comment"
           name="comment"
@@ -31,9 +39,12 @@
           placeholder="Tell us about the concept you're imagining. What's the story? What feeling should it evoke? The more details, the better we can understand your unique style."
           required
         ></textarea>
-        <button type="submit" class="vision__button">
-          Start the Conversation
-        </button>
+        <div class="vision__middle">
+          <button class="buttn" type="submit">
+            <span class="wave"></span>
+            <span class="text">Start the Conversation</span>
+          </button>
+        </div>
       </form>
     </div>
     <picture>
@@ -59,7 +70,7 @@
         media="(min-width: 767px)"
       />
       <img
-      class="vision__image"
+        class="vision__image"
         src="./img/vision/mobile/vision@mobile-1x.webp"
         alt="picture of clothing"
       />

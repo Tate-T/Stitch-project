@@ -1,64 +1,44 @@
 .concept {
-    padding-bottom: 64px;
+padding-bottom: 64px;
 padding-top: 64px;
-
-&__container {
-     display: flex;
-        flex-direction: column;
-        gap: 32px;
-        align-items: center;
+    &__container {
+          display: flex;
+          flex-direction: column;
+        gap: 32px
 }
 &__title {
-     @include title($size: 36px, $height: 120%);
-}
-&__wrapper {
-    max-width: 335px;
-    display: flex;
-    gap: 24px;
-}
-&__box {
-}
-&__list__number {
-      display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-&__item__number {
-    height: 281px;
-    position: relative;
-}
-&__number {
     @include title($size: 36px, $height: 120%);
-     text-align: center;
-}
-&__item__number::after {
-    content: "";
-    display: block;
-    width: 100%;
-    border: 1px solid #000;
-width: 222px;
-height: 0px;
-position: absolute;
-bottom: 108px;
-left: -98px;
-transform: rotate(-90deg);
-}
-&__item__number:nth-child(3){
-  margin-top: 24px;
-}
-&__item__number:nth-child(4)::after{
-    content: none;
 }
 &__list {
-     display: flex;
+    display: flex;
     flex-direction: column;
     gap: 16px;
 }
 &__item {
-  
+    display: flex;
+    gap: 24px;
 }
-&__item:nth-child(1){
-    padding-bottom: 24px;
+&__box {
+    display: flex;
+flex-direction: column;
+     align-items: center;
+  gap: 16px;
+}
+&__box::after {
+    content: "";
+    display: block;
+   height: 100%;
+  border-left: 2px solid #000;
+  width: 2px;
+ 
+}
+&__item:nth-child(4) .concept__box::after {
+    display: none;
+}
+&__number {
+    @include title($size: 36px, $height: 120%);
+}
+&__wrapper {
 }
 &__subtitle {
      @include title($size: 18px, $height: 140%);
@@ -67,114 +47,74 @@ transform: rotate(-90deg);
 &__text {
      @include text($size: 16px);
 }
+
 }
 
 
-
-@media screen and (min-width: 768px) {
-  .concept {
+@media screen and (min-width: 768px)  {
+.concept {
 
     &__container {
         flex-direction: row;
-        align-items: normal;
+        gap: 32px;
 }
 &__title {
     width: 151px;
 }
-&__wrapper {
-    max-width: 800px;
+&__list {
+     width: 521px;
+}
+&__item {
 }
 &__box {
-}
-&__item__number {
-    height: 209px;
-}
-&__item__number::after {
-    content: "";
-width: 120px;
-bottom: 90px;
-left: -48px;
-}
-&__item__number:nth-child(3){
-  margin-top: 0px;
-}
-&__item__number:nth-child(4)::after{
-    content: none;
+   
 }
 &__number {
 }
-&__list {
+&__wrapper {
 }
-&__item {
-    height: 209px;
-}
-&__item:nth-child(1){
-    padding-bottom: 0;
-}
-
-
 &__subtitle {
 }
 &__text {
 }
-}  
+
+}
+
 }
 
 @media screen and (min-width: 1344px) {
-    .concept {
+.concept {
 padding-bottom: 112px;
 padding-top: 112px;
     &__container {
+    }    
         
-}
 &__title {
-    @include title($size: 48px, $height: 120%);
-width: 416px;
-
-}
-&__wrapper {
-    max-width: 864px;
-   gap: 40px;
-}
-&__box {
-}
-
-&__list__number {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-&__item__number {
-    height: 174px;
-    position: relative;
-}
-&__number {
-    @include title($size: 48px, $height: 120%);
-text-align: center;
-
-}
-&__item__number::after {
-width: 100px;
-bottom: 48px;
-left: -34px;
-}
-
-&__item__number:nth-child(4)::after{
-    content: none;
+     @include title($size: 48px, $height: 120%);
+     width: 416px;
 }
 &__list {
+    width: 864px;
 }
 &__item {
-    height: 174px;
-  
+gap: 40px;
+height: 174px;
+}
+&__box {
+ 
 }
 
+&__number {
+    @include title($size: 48px, $height: 120%);
+}
+&__wrapper {
+}
 &__subtitle {
     @include title($size: 20px, $height: 140%);
-
 }
 &__text {
-   
 }
+
 }
+
 }
